@@ -30,6 +30,6 @@ export class InventoryCardComponent {
   @Output() selectionChanged = new EventEmitter<any>();
 
   onSelectionChange() {
-    this.selectionChanged.emit(this.inventory);
+    this.selectionChanged.emit(this.inventory.id);
   }
 }
